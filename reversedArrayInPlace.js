@@ -9,3 +9,29 @@ function reversedArrayInPlace(arr) {
 }
 
 console.log(reversedArrayInPlace(["carlos", "Henrique","oliveira", "leite"]))
+
+
+
+
+
+
+
+
+function reverse(str) {
+	if(!str || str.length < 2 || typeof str !== 'string')
+	{
+		return 'Something Wrong';
+	}
+
+	const backWards = [];
+	const totalItems = str.length - 1;
+
+	for(let i = totalItems; i >= 0; i--){
+		backWards.push(str[i]);
+	}
+
+	return backWards.join("");
+	
+}
+
+console.log(reverse("Carlos Henrique Leite"))
